@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create On</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("rLMYhbdUkFidJygt7");
+    })();
+  </script>
+  <script>
+    function sendMail() {
+      let params = {
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+      }
+
+      emailjs.send("service_ogg1rpk", "template_2p40wtg", params).then(alert("email has send!!"))
+    }
+  </script>
+</head>
+
+<body class="bg-dark">
+  <section id="FirstBox" class="pt-lg-4 pt-3 container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <img class="navbar-brand col-lg-2 col-5 " src="./Assets/xmas2.png" alt="" width="55" height="95">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#FirstBox"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#serviceBox"><b>Service</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourwork" tabindex="-1" aria-disabled="true"><b>Project</b></a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a id="contactbtn" class="px-4 py-1 roundedbtn" href="#contactBox">contact us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row container-fluid">
+      <div class="col-12 mx-lg-5 my-lg-3">
+      </div>
+      <div class="col-12 m-lg-5">
+      </div>
+      <div class="col-12 m-5" id="welcomebox">
+        <h5>Welcome</h5>
+        <h2 class="py-1"><b>The Design Solution<br> for your Business</b></h2>
+        <h4>Let's build together</h4><br>
+        <button class="roundedbtn px-5 py-1 my-2 clickbtn">Explore now</button>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid py-5" id="secondBox">
+    <h1 class="py-2">
+      Let's Make <br> some Magic
+    </h1>
+  </section>
+  <section class="aboutBox">
+    <p><i>
+      At Create On, we redefine design with innovation and
+      creativity. From curated aesthetics to cutting-edge
+      concepts, we craft impactful experiences that
+      transform visions into realities.</i>
+    </p>
+  </section>
+  <section class="serviceBox" id="serviceBox">
+    <h1 id="serviceheading">OUR SERVICES</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-body row">
+            <div class="col-lg-4 col-8">
+              <h1>
+                DIGITAL MARKETING
+              </h1>
+              <P>Our digital marketing solutions guide nonprofit organizations through a strategic process, cultivating
+                a distinctive online presence that sparks actionable engagement and nurtures sustainable growth.</P>
+            </div>
+            <div class="col-lg-4 col-8">
+              <h1>
+                WEBSITE DESIGN
+              </h1>
+              <P>From content-rich websites and engaging online experiences, our websites enhance user experiences to
+                unite audiences in support of your online cause.</P>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="card-body row">
+            <div class="col-lg-4 col-8">
+
+              <h1>
+                VIDEO EDITING
+              </h1>
+              <P>Our video editing expertise guides clients through a strategic process, crafting compelling visual
+                narratives that establish a memorable online presence, sparking engagement and fostering growth.</P>
+            </div>
+            <div class="col-lg-4 col-8">
+
+              <h1>
+                ANIMATION 2D & 3D
+              </h1>
+              <P>Through captivating 2D and 3D animation, our services elevate storytelling to create immersive online
+                experiences that unite audiences, rallying support for your digital endeavors.</P>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-body row">
+            <div class="col-lg-4 col-8">
+              <h1>
+                LOGO DESIGN & BRANDING
+              </h1>
+              <P>From content-rich websites and engaging online experiences, our websites enhance user experiences to
+                unite audiences in support of your online cause.</P>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="ourworkBox mt-5 container-fluid" id="ourwork">
+    <h1 id="serviceheading">OUR WORKS</h1>
+    <div class="row d-flex justify-content-center">
+      <img src="./Assets/jpeg-optimizer_original-4be4675a456b876606a7db938dc7b0a4.png" alt=""
+        class="col-lg-5 col-12 m-2">
+      <img src="./Assets/jpeg-optimizer_original-1d57635c17424b7ecae6c0f15db0ef45.png" alt=""
+        class="col-lg-5 col-12 m-2">
+      <img src="./Assets/jpeg-optimizer_original-d882ea7e90be7144d393400f682f96ac.jpg" alt=""
+        class="col-lg-5 col-12 m-2">
+      <img src="./Assets/889c85f6b7d4aca53ffd42d01d3b6b5e.jpg" alt="" class="col-lg-5 col-12 m-2">
+      <button class="roundedbtn px-lg-5 py-1 w-25 mt-3 clickbtn">View All</button>
+    </div>
+  </section>
+  <section class="contactBox mt-5 p-lg-5 p-2 pt-5 row container-fluid" id="contactBox">
+    <h1 class="text-center col-12">Ready To Grow?</h1>
+    <div class="col-lg-4 col-1"></div>
+    <form class="row container-fluid col-7 mb-5">
+      <div class="col-12 my-lg-3">
+        <label for="email"><b>Email Address</b> (required) </label><br>
+        <input type="email" name="email" id="email" placeholder="From address">
+      </div>
+      <div class="col-12 my-lg-3">
+        <label for="Subject"><b>Subject</b> (required)</label><br>
+        <input type="text" name="subject" id="subject">
+      </div>
+      <div class="col-12 my-lg-3">
+        <label for="message"><b>Message</b> (required)</label><br>
+        <textarea name="message" id="message" cols="30" rows="8"></textarea>
+      </div>
+      <div class="col-7"></div>
+      <!-- <input class="col-12 m-lg-3 m-1 ms-lg-4" type="submit" value="Send"> -->
+      <input class="col-3" type="submit" value="Send" id="sendBtn" onclick="sendMail()">
+    </form><br>
+    <h5 class="col-lg-3 col-7">CreateOn</h5>
+    <div class="col-lg-7 col-1">
+    </div>
+    <div class="col-lg-2 col-3">
+      <a href="https://www.instagram.com/create0n__?igsh=MW9pOGdlZHIwdTZ2bA=="><img src="./Assets/square-facebook.svg"
+          alt="" width="30"></a>
+      <a href="https://www.instagram.com/create0n__?igsh=MW9pOGdlZHIwdTZ2bA=="><img src="./Assets/square-instagram.svg"
+          alt="" width="30"></a>
+    </div>
+  </section>
+</body>
+
+</html>

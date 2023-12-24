@@ -12,9 +12,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#FirstBox img {
+/* #FirstBox img {
     height: 92px;
-}
+} */
 
 #contactbtn {
     background-image: linear-gradient(90deg, rgba(255, 225, 0, 0.774), rgb(0, 0, 0));
@@ -51,6 +51,7 @@ body {
     margin-top: 170px;
     margin-bottom: 250px;
     margin-left: 200px;
+    font-size: 35px;
 }
 
 /* for glowing text  */
@@ -175,9 +176,9 @@ body {
 /* for mobile view */
 @media only screen and (max-width: 990px) {
 
-    #FirstBox img {
+    /* #FirstBox img {
         height: 80px;
-    }
+    } */
 
     #secondBox {
         background-attachment: unset;

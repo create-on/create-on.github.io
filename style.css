@@ -52,7 +52,6 @@ body {
     margin-bottom: 250px;
     margin-left: 200px;
     font-size: 35px;
-    color: #FFD00D;
 }
 
 /* for glowing text  */
@@ -187,9 +186,10 @@ body {
     }
 
     #secondBox h1 {
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: unset;
+        margin-bottom: 50px;
         margin-left: unset;
+        font-size: 20px;
     }
 
     .aboutBox {

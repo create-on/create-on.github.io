@@ -37,7 +37,7 @@ body {
 }
 
 #secondBox {
-    background: url(./Assets/jpeg-optimizer_yellow_Santa_Claus_wishing_background_is_black.jpg);
+    background: url(./Assets/jpeg-optimizer_IMG-20231227-WA0009.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
@@ -45,11 +45,12 @@ body {
     color: white;
     /* background-attachment: fixed; */
     background-position: center;
+    height: 650px;
 }
 
 #secondBox h1 {
     margin-top: 170px;
-    margin-bottom: 250px;
+    margin-bottom: 350px;
     margin-left: 200px;
     font-size: 35px;
 }
@@ -183,6 +184,7 @@ body {
     #secondBox {
         background-attachment: unset;
         background-position: unset;
+        height: 300px;
     }
 
     #secondBox h1 {
